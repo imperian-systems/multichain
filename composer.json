@@ -5,6 +5,12 @@
     "require": {
         "fguillot/json-rpc": "^1.2"
     },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "imperiansystems\\multichain\\": "src/"
+        }
+    },
     "license": "MIT",
     "authors": [
         {
