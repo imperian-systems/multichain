@@ -30,6 +30,16 @@ class MultiChain
         return $this->client->execute('publish', array($stream, $key, $data));
     }
 
+    public function subscribe($name, $rescan = true)
+    {
+        return $this->client->execute('subscribe', array($name, $rescan));
+    }
+
+    public function unsubscribe($name)
+    {
+        return $this->client->execute('unsubscribe', array($name));
+    }
+
     public function liststreamitems($stream, $verbose = false, $count = 10, $start = false, $local_ordering = false)
     {
         if($start == false) $start = 0 - $count;
