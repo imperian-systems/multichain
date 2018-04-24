@@ -24,4 +24,17 @@ class MultiChain
     {
         return $this->client->execute('create', array($type, $name, $open));
     }
+
+    public function publish($stream, $key, $data)
+    {
+        return $this->client->execute('publish', array($stream, $key, $data));
+    }
+
+    public function liststreamitems($stream, $verbose = false, $count = 10, $start = false, $local_ordering = false)
+    {
+        if($start == false) $start = 0 - $count;
+        return $this->client->execute('liststreamitems', 
+                              array($stream, $verbose, $count,
+                                    $start, $local_ordering));
+    }
 }
