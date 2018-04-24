@@ -14,6 +14,11 @@ class MultiChain
         $this->client->getHttpClient()->withUsername(env('MULTICHAIN_RPC_USER'))->withPassword(env('MULTICHAIN_RPC_PASSWORD'));
     }
 
+    public function createkeypairs($count = 1)
+    {
+        return $this->client->execute('createkeypairs', array($count));
+    }
+
     public function liststreams($streams = "*", $verbose = false, $count = 128, $start = false)
     {
         if($start == false) $start = 0 - $count;
