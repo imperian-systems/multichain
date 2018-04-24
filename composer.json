@@ -1,0 +1,15 @@
+{
+    "name": "imperiansystems/multichain",
+    "description": "Interface to MultiChain RPC",
+    "type": "library",
+    "require": {
+        "fguillot/json-rpc": "^1.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tim Schwartz",
+            "email": "tim@timscomputerservices.com"
+        }
+    ]
+}
