@@ -33,10 +33,13 @@ var_dump($stream_items);
 ````$text = "Hello, this will be appearing unencrypted on the Public Record stream in hexadecimal format";````
 
 * Get addresses of this node
+
 ````$addresses = MultiChain::getaddresses();````
 
 * Get the private key of an address
+
 ````$key = MultiChain::dumpprivkey($addresses[0]);````
 
 * Publish to the Public Record stream of the blockchain
+
 ````MultiChain::publish("Public Record", $key, bin2hex($data));````
