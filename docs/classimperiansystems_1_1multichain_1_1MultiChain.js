@@ -5,6 +5,7 @@ var classimperiansystems_1_1multichain_1_1MultiChain =
     [ "createkeypairs", "classimperiansystems_1_1multichain_1_1MultiChain.html#a31f60513deb13ae6b75c2b918bbbf87d", null ],
     [ "dumpprivkey", "classimperiansystems_1_1multichain_1_1MultiChain.html#adb6442684d8c37218bfdb830d1706389", null ],
     [ "getaddresses", "classimperiansystems_1_1multichain_1_1MultiChain.html#add463532dbf6a41b0ffb17c93b976884", null ],
+    [ "getstreamitem", "classimperiansystems_1_1multichain_1_1MultiChain.html#a7e2b2d41c24dfabc14b4971ca7f2720c", null ],
     [ "listpermissions", "classimperiansystems_1_1multichain_1_1MultiChain.html#ab86158c62f6a136336c9ff560dccc327", null ],
     [ "liststreamitems", "classimperiansystems_1_1multichain_1_1MultiChain.html#ae8eb511d2b479f5d771aaa0845abc214", null ],
     [ "liststreams", "classimperiansystems_1_1multichain_1_1MultiChain.html#ab79c6e49d2c76402097f299ad8155813", null ],

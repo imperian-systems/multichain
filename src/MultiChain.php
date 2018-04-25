@@ -153,6 +153,19 @@ class MultiChain
     }
 
     /**
+     * Retrieves a specific item with txid from stream, passed as a stream name, ref or creation txid, to which the node must be subscribed.
+     *
+     * @access public
+     * @param  string   $stream
+     * @param  string   $txid
+     * @return array
+     */
+    public function getstreamitem($stream, $txid)
+    {
+        return $this->client->execute('getstreamitem', array($txid));
+    }
+
+    /**
      * Lists items in stream, passed as a stream name, ref or creation txid.
      *
      * @access public

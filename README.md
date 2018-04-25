@@ -30,16 +30,17 @@ var_dump($stream_items);
 
 ### Add data to a stream
 
-````$text = "Hello, this will be appearing unencrypted on the Public Record stream in hexadecimal format";````
+````
+$text = "Hello, this will be appearing unencrypted on the Public Record stream in hexadecimal format";
 
-* Get addresses of this node
+/* Get addresses of this node */
+$addresses = MultiChain::getaddresses();
 
-````$addresses = MultiChain::getaddresses();````
+/* Get the private key of an address */
+$key = MultiChain::dumpprivkey($addresses[0]);
 
-* Get the private key of an address
+/* Publish to the Public Record stream of the blockchain */
+$txid = MultiChain::publish("Public Record", $key, bin2hex($data));
 
-````$key = MultiChain::dumpprivkey($addresses[0]);````
-
-* Publish to the Public Record stream of the blockchain
-
-````MultiChain::publish("Public Record", $key, bin2hex($data));````
+print "Transaction id: $txid\n";
+````

@@ -70,6 +70,8 @@ $(document).ready(function(){initNavTree('classimperiansystems_1_1multichain_1_1
 Collaboration diagram for imperiansystems\multichain\MultiChain:</div>
 <div class="dyncontent">
 <div class="center"><img src="classimperiansystems_1_1multichain_1_1MultiChain__coll__graph.png" border="0" usemap="#imperiansystems_0Cmultichain_0CMultiChain_coll__map" alt="Collaboration graph"/></div>
+<map name="imperiansystems_0Cmultichain_0CMultiChain_coll__map" id="imperiansystems_0Cmultichain_0CMultiChain_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -84,6 +86,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adb6442684d8c37218bfdb830d1706389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add463532dbf6a41b0ffb17c93b976884"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimperiansystems_1_1multichain_1_1MultiChain.html#add463532dbf6a41b0ffb17c93b976884">getaddresses</a> ($verbose=false)</td></tr>
 <tr class="separator:add463532dbf6a41b0ffb17c93b976884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2b2d41c24dfabc14b4971ca7f2720c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimperiansystems_1_1multichain_1_1MultiChain.html#a7e2b2d41c24dfabc14b4971ca7f2720c">getstreamitem</a> ($stream, $txid)</td></tr>
+<tr class="separator:a7e2b2d41c24dfabc14b4971ca7f2720c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab86158c62f6a136336c9ff560dccc327"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimperiansystems_1_1multichain_1_1MultiChain.html#ab86158c62f6a136336c9ff560dccc327">listpermissions</a> ($permissions=&quot;*&quot;, $addresses=&quot;*&quot;, $verbose=false)</td></tr>
 <tr class="separator:ab86158c62f6a136336c9ff560dccc327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8eb511d2b479f5d771aaa0845abc214"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimperiansystems_1_1multichain_1_1MultiChain.html#ae8eb511d2b479f5d771aaa0845abc214">liststreamitems</a> ($stream, $verbose=false, $count=10, $start=false, $local_ordering=false)</td></tr>
@@ -263,8 +267,8 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="MultiChain_8php_source.html#l00181">181</a> of file <a class="el" href="MultiChain_8php_source.html">MultiChain.php</a>.</p>
-<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    {</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">return</span> $this-&gt;client-&gt;execute(<span class="stringliteral">&#39;dumpprivkey&#39;</span>, array($address));</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="MultiChain_8php_source.html#l00194">194</a> of file <a class="el" href="MultiChain_8php_source.html">MultiChain.php</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    {</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span> $this-&gt;client-&gt;execute(<span class="stringliteral">&#39;dumpprivkey&#39;</span>, array($address));</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="add463532dbf6a41b0ffb17c93b976884"></a>
@@ -295,6 +299,46 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="MultiChain_8php_source.html#l00051">51</a> of file <a class="el" href="MultiChain_8php_source.html">MultiChain.php</a>.</p>
 <div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> $this-&gt;client-&gt;execute(<span class="stringliteral">&#39;getaddresses&#39;</span>, array($verbose));</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a7e2b2d41c24dfabc14b4971ca7f2720c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2b2d41c24dfabc14b4971ca7f2720c">&#9670;&nbsp;</a></span>getstreamitem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">imperiansystems\multichain\MultiChain::getstreamitem </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$txid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves a specific item with txid from stream, passed as a stream name, ref or creation txid, to which the node must be subscribed. </p>
+<p>public </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$stream</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$txid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="MultiChain_8php_source.html#l00163">163</a> of file <a class="el" href="MultiChain_8php_source.html">MultiChain.php</a>.</p>
+<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    {</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">return</span> $this-&gt;client-&gt;execute(<span class="stringliteral">&#39;getstreamitem&#39;</span>, array($txid));</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab86158c62f6a136336c9ff560dccc327"></a>
@@ -401,8 +445,8 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="MultiChain_8php_source.html#l00166">166</a> of file <a class="el" href="MultiChain_8php_source.html">MultiChain.php</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    {</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">if</span>($start === <span class="keyword">false</span>) $start = 0 - $count;</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">return</span> $this-&gt;client-&gt;execute(<span class="stringliteral">&#39;liststreamitems&#39;</span>, </div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                              array($stream, $verbose, $count,</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                    $start, $local_ordering));</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="MultiChain_8php_source.html#l00179">179</a> of file <a class="el" href="MultiChain_8php_source.html">MultiChain.php</a>.</p>
+<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    {</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span>($start === <span class="keyword">false</span>) $start = 0 - $count;</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">return</span> $this-&gt;client-&gt;execute(<span class="stringliteral">&#39;liststreamitems&#39;</span>, </div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                              array($stream, $verbose, $count,</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                                    $start, $local_ordering));</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab79c6e49d2c76402097f299ad8155813"></a>
