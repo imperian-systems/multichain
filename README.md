@@ -50,7 +50,7 @@ print "Original content: ".hex2bin(data)."\n";
 ````
 
 ### Add more than 16K to stream
-
+````
 $image = file_get_contents("/tmp/test.jpg");
 $txid = MultiChain::publish("Public Record", $key, bin2hex($image));
 
