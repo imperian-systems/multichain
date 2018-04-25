@@ -1,6 +1,24 @@
 # imperiansystems/multichain
 Interface to MultiChain RPC
 
+Add to composer.json:
+
+````
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "git@github.com:imperiansystems/multichain.git",
+        "no-api": true
+    }
+],
+````
+
+Then run:
+
+````
+composer require imperiansystems/multichain
+````
+
 Add the following options to .env:
 
 ````
@@ -21,7 +39,7 @@ $streams = MultiChain::liststreams();
 var_dump($streams);
 ````
 
-### subscribe to a stream and list items on it 
+### Subscribe to a stream and list items on it 
 ````
 MultiChain::subscribe("Public Record");
 $stream_items = MultiChain::liststreamitems("Public Record");
