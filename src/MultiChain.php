@@ -57,4 +57,9 @@ class MultiChain
                               array($stream, $verbose, $count,
                                     $start, $local_ordering));
     }
+
+    public function dumpprivkey($address)
+    {
+        return $this->client->execute('dumpprivkey', array($address));
+    }
 }
