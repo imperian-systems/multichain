@@ -60,7 +60,7 @@ class MultiChain
      * (as embedded in transaction inputs) and privkey (used for signatures) is provided.
      *
      * @access public
-     * @param  bool   $verbose
+     * @param  int   $count
      * @return array 
      */
     public function createkeypairs($count = 1)
