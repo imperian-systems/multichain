@@ -11,8 +11,12 @@ MULTICHAIN_RPC_PASSWORD=password
 
 To use:
 
-`use Facades\imperiansystems\multichain\MultiChain;`
+````
+use Facades\imperiansystems\multichain\MultiChain;
 
-`$streams = MultiChain::liststreams();`
+$streams = MultiChain::liststreams();
+var_dump($streams);
 
-`var_dump($streams)`
+MultiChain::subscribe("Public Record");
+$stream_items = MultiChain::liststreamitems("Public Record");
+var_dump($stream_items);
