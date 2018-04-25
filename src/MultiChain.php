@@ -162,7 +162,22 @@ class MultiChain
      */
     public function getstreamitem($stream, $txid)
     {
-        return $this->client->execute('getstreamitem', array($txid));
+        return $this->client->execute('getstreamitem', array($stream, $txid));
+    }
+
+    /**
+     * Returns the data embedded in output vout of transaction txid, in hexadecimal. 
+     *
+     * @access public
+     * @param  string   $txid
+     * @param  int      $vout
+     * @param  int      $count_bytes
+     * @param  int      $start_byte
+     * @return array
+     */
+    public function gettxoutdata($txid, $vout, $count_bytes = PHP_INT_MAX, $start_byte = 0)
+    {
+        return $this->client->execute('gettxoutdata', array($txid, $vout, $count_bytes, $start_byte));
     }
 
     /**
