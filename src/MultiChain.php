@@ -24,6 +24,11 @@ class MultiChain
         return $this->client->execute('createkeypairs', array($count));
     }
 
+    public function listpermissions($permissions = "*", $addresses = "*", $verbose = false)
+    {
+        return $this->client->execute('listpermissions', array($permissions, $addresses, $verbose));
+    }
+
     public function liststreams($streams = "*", $verbose = false, $count = 128, $start = false)
     {
         if($start == false) $start = 0 - $count;
