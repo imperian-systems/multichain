@@ -48,7 +48,8 @@ class StreamController extends Controller
      */
     public function show($id)
     {
-        //
+        $items = MultiChain::liststreamitems($id, true, 100);
+        print_r($items);
     }
 
     /**
