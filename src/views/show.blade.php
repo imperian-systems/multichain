@@ -18,14 +18,23 @@
 </div>
 <div class="row">
 <?php 
-$size = strlen($item['data']);
+if(is_array($item['data']))
+{
+    $size = 0;
+    $data = print_r($item['data'], 1);
+}
+else
+{
+    $data = hex2bin($item['data']);
+    $size = strlen($data);
 
-if($size > 2048) $size = ($size / 1024)." Kbytes";
-else $size .= " bytes";
+    if($size > 2048) $size = ($size / 1024)." Kbytes";
+    else $size .= " bytes";
+}
 ?>
   <div class="col s12">Size: {{{ $size }}}</div>
   <div class="col s12">Data:<br />
-    {{{ hex2bin($item['data']) }}}
+    {{{ $data }}}
   </div>
 </div>
 </div>
