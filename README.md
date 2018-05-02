@@ -27,6 +27,12 @@ MULTICHAIN_RPC_USER=multichainrpc
 MULTICHAIN_RPC_PASSWORD=password
 ````
 
+Add to config/app.php, in the providers array:
+
+````
+imperiansystems\multichain\MultiChainServiceProvider::class,
+````
+
 To use:
 
 ````
