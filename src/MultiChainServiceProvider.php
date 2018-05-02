@@ -16,6 +16,8 @@ class MultiChainServiceProvider extends ServiceProvider
         {
             require __DIR__.'/routes.php';
         }
+
+        $this->loadViewsFrom(__DIR__.'/views', 'multichain');
     }
     /**
      * Register the application services.
