@@ -27,6 +27,12 @@ MULTICHAIN_RPC_USER=multichainrpc
 MULTICHAIN_RPC_PASSWORD=password
 ````
 
+Add to config/app.php, in the providers array:
+
+````
+imperiansystems\multichain\MultiChainServiceProvider::class,
+````
+
 To use:
 
 ````
@@ -64,7 +70,7 @@ print "Transaction id: $txid\n";
 
 /* Retrieve and print data */
 $data = MultiChain::getstreamitem("Public Record", $txid);
-print "Original content: ".hex2bin(data)."\n";
+print "Original content: ".hex2bin($data)."\n";
 ````
 
 ### Add more than 16K to stream
@@ -83,5 +89,5 @@ $size = $metadata['data']['size'];
 $data = MultiChain::gettxoutdata($txid, $vout, $size);
 
 header('Content-type: image/jpeg');
-print $data;
+print hex2bin($data);
 ````
