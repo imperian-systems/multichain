@@ -3,6 +3,8 @@
 namespace imperiansystems\multichain;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
 
 class StreamController extends Controller
 {
