@@ -15,8 +15,8 @@ class StreamController extends Controller
      */
     public function index()
     {
-        $streams = MultiChain::liststreams();
-        print_r($streams);
+        $streams = MultiChain::liststreams("*", true);
+        return view('multichain::stream.index', [ 'streams'=>$streams ]);
     }
 
     /**
@@ -48,8 +48,8 @@ class StreamController extends Controller
      */
     public function show($id)
     {
-        $items = MultiChain::liststreamitems($id, true, 100);
-        return view('multichain::show', [ 'items'=>$items ]);
+        $stream = MultiChain::liststreams($id, true);
+        return view('multichain::stream.show', [ 'stream'=>$stream ]);
     }
 
     /**
