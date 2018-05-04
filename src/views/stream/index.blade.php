@@ -7,7 +7,7 @@
 @foreach($streams as $stream)
 <div style="border-bottom: thin solid black; margin-bottom: 5px;">
     <div class="row">
-        <div class="col s12 m3">Name: <a href="/api/v1/multichain/{{{ $stream['name'] }}}">{{{ $stream['name'] }}}</a></div>
+        <div class="col s12 m3">Name: <a href="/multichain/v1/stream/{{{ $stream['name'] }}}">{{{ $stream['name'] }}}</a></div>
         <div class="col s12 m9">Create TXID: {{{ $stream['createtxid'] }}}</div>
     </div>
     <div class="row">
