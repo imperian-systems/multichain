@@ -35,6 +35,9 @@
 <?php } ?>
     </div>
     <div class="row">
+        <a href="/multichain/v1/item/?stream={{{ $stream['name'] }}}">View stream items</a>
+    </div>
+    <div class="row">
         <h3>Permissions</h3>
     </div>
 @foreach($permissions as $p)
