@@ -49,7 +49,8 @@ class StreamController extends Controller
     public function show($id)
     {
         $stream = MultiChain::liststreams($id, true);
-        return view('multichain::stream.show', [ 'stream'=>$stream ]);
+        $permissions = MultiChain::listpermissions($id.".*", "*", true);
+        return view('multichain::stream.show', [ 'stream'=>$stream[0], 'permissions'=>$permissions ]);
     }
 
     /**
