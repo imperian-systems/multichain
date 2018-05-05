@@ -57,11 +57,9 @@ var_dump($stream_items);
 ````
 $text = "Hello, this will be appearing unencrypted on the Public Record stream in hexadecimal format";
 
-/* Get addresses of this node */
-$addresses = MultiChain::getaddresses();
-
-/* Get the private key of an address */
-$key = MultiChain::dumpprivkey($addresses[0]);
+/* Generate a unique key, or use existing key to update a record. */
+/* For example, with package Webpatser\Uuid */
+$key = Uuid::generate(4);
 
 /* Publish to the Public Record stream of the blockchain */
 $txid = MultiChain::publish("Public Record", $key, bin2hex($text));
