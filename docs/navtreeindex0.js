@@ -1,5 +1,7 @@
 var NAVTREEINDEX0 =
 {
+"MultiChainGeneral_8php.html":[2,0,1],
+"MultiChainGeneral_8php_source.html":[2,0,1],
 "MultiChain_8php.html":[2,0,0],
 "MultiChain_8php_source.html":[2,0,0],
 "annotated.html":[1,0],
