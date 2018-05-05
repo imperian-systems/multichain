@@ -12,6 +12,8 @@ use JsonRPC\Client; /* Composer package fguillot/json-rpc */
  */
 class MultiChain
 {
+    use MultiChainGeneral;
+
     /**
      * Handle to the JsonRPC client
      *

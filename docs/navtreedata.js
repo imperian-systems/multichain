@@ -21,7 +21,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"MultiChain_8php.html"
+"MultiChainGeneral_8php.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
