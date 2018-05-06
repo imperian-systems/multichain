@@ -13,6 +13,7 @@ use JsonRPC\Client; /* Composer package fguillot/json-rpc */
 class MultiChain
 {
     use MultiChainGeneral;
+    use MultiChainWalletAddresses;
 
     /**
      * Handle to the JsonRPC client
@@ -40,19 +41,6 @@ class MultiChain
 
         $this->client = new Client($url.":".$port);
         $this->client->getHttpClient()->withUsername($rpc_user)->withPassword($rpc_password);
-    }
-
-    /**
-     * Returns a list of addresses in this node’s wallet.
-     * Set verbose to true to get more information about each address.
-     *
-     * @access public
-     * @param  bool   $verbose
-     * @return array 
-     */
-    public function getaddresses($verbose = false)
-    {
-        return $this->client->execute('getaddresses', array($verbose));
     }
 
     /**

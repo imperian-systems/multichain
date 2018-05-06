@@ -69,7 +69,8 @@ WARN_LOGFILE           =
 # configuration options related to the input files
 #---------------------------------------------------------------------------
 INPUT                  = src/MultiChain.php \
-                         src/MultiChainGeneral.php 
+                         src/MultiChainGeneral.php \
+                         src/MultiChainWalletAddresses.php
 FILE_PATTERNS          = *.inc \
                          *.php
 RECURSIVE              = NO
