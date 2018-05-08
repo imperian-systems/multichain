@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - imperiansystems\multichain\MultiChain</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.html">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.html">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.html">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.html">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.html">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.html">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.html">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.html#imperiansystems_multichain">imperiansystems\multichain</a>
+          </li>
+          <li class="separator">MultiChain</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/MultiChain.php.html#line13">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>imperiansystems\multichain\</small>MultiChain</h1>
+        <h4>MultiChain class</h4>
+        <p/>
+        <ul>
+          <li>Author: Tim Schwartz</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class MultiChain
+            {<br/><ul class="none"><li>// members</li><li>private <span title="imperiansystems\multichain\JsonRPC\Client">Client</span> <a href="#members">$client</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/__construct.html">__construct</a>()
+                    </li><li>public array <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/listpermissions.html">listpermissions</a>()
+                    </li><li>public array <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/liststreams.html">liststreams</a>()
+                    </li><li>public string <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/create.html">create</a>()
+                    </li><li>public string <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/publish.html">publish</a>()
+                    </li><li>public void <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/subscribe.html">subscribe</a>()
+                    </li><li>public void <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/unsubscribe.html">unsubscribe</a>()
+                    </li><li>public array <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/getstreamitem.html">getstreamitem</a>()
+                    </li><li>public array <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/gettxoutdata.html">gettxoutdata</a>()
+                    </li><li>public array <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/liststreamitems.html">liststreamitems</a>()
+                    </li><li>public string <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/dumpprivkey.html">dumpprivkey</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="imperiansystems\multichain\MultiChainGeneral">MultiChainGeneral</span></li><li>public array <a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral/getblockchainparams.html">getblockchainparams</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral/getruntimeparams.html">getruntimeparams</a>()
+                        </li><li>public void <a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral/setruntimeparam.html">setruntimeparam</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral/getinfo.html">getinfo</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral/help.html">help</a>()
+                        </li><li>public void <a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral/stop.html">stop</a>()
+                        </li></ul><ul class="none"><li>// Inherited methods from <span title="imperiansystems\multichain\MultiChainWalletAddresses">MultiChainWalletAddresses</span></li><li>public string <a title="imperiansystems\multichain\MultiChainWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainWalletAddresses/addmultisigaddress.html">addmultisigaddress</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainWalletAddresses/getaddresses.html">getaddresses</a>()
+                        </li><li>public string <a title="imperiansystems\multichain\MultiChainWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainWalletAddresses/getnewaddress.html">getnewaddress</a>()
+                        </li><li>public null <a title="imperiansystems\multichain\MultiChainWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainWalletAddresses/importaddress.html">importaddress</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainWalletAddresses/listaddresses.html">listaddresses</a>()
+                        </li></ul><ul class="none"><li>// Inherited methods from <span title="imperiansystems\multichain\MultiChainNonWalletAddresses">MultiChainNonWalletAddresses</span></li><li>public array <a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses/createkeypairs.html">createkeypairs</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses/createmultisig.html">createmultisig</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses/validateaddress.html">validateaddress</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Uses</h4>
+          <ul>
+            <li>
+              <a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral.html">imperiansystems\multichain\MultiChainGeneral</a>
+            </li>
+            <li>
+              <a title="imperiansystems\multichain\MultiChainWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainWalletAddresses.html">imperiansystems\multichain\MultiChainWalletAddresses</a>
+            </li>
+            <li>
+              <a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses.html">imperiansystems\multichain\MultiChainNonWalletAddresses</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="client"><strong>$client</strong>
+                —
+                <a title="imperiansystems\multichain\JsonRPC\Client" href="../classes/imperiansystems_multichain_JsonRPC_Client.html">imperiansystems\multichain\JsonRPC\Client</a><br/><span class="indent">Handle to the JsonRPC client</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/__construct.html">__construct()</a>
+                — Constructor</li>
+            <li id="create"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/create.html">create()</a>
+                — Creates a new stream on the blockchain called name.</li>
+            <li id="dumpprivkey"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/dumpprivkey.html">dumpprivkey()</a>
+                — Returns the private key associated with address in this node’s wallet.</li>
+            <li id="getstreamitem"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/getstreamitem.html">getstreamitem()</a>
+                — Retrieves a specific item with txid from stream, passed as a stream name, ref or creation txid, to which the node must be subscribed.</li>
+            <li id="gettxoutdata"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/gettxoutdata.html">gettxoutdata()</a>
+                — Returns the data embedded in output vout of transaction txid, in hexadecimal.</li>
+            <li id="listpermissions"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/listpermissions.html">listpermissions()</a>
+                — Returns a list of all permissions which have been explicitly granted to addresses.</li>
+            <li id="liststreamitems"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/liststreamitems.html">liststreamitems()</a>
+                — Lists items in stream, passed as a stream name, ref or creation txid.</li>
+            <li id="liststreams"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/liststreams.html">liststreams()</a>
+                — Returns information about streams created on the blockchain.</li>
+            <li id="publish"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/publish.html">publish()</a>
+                — Publishes an item in stream, passed as a stream name, ref or creation txid, with key provided in text form and data in hexadecimal.</li>
+            <li id="subscribe"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/subscribe.html">subscribe()</a>
+                — Instructs the node to start tracking one or more asset(s) or stream(s).</li>
+            <li id="unsubscribe"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/unsubscribe.html">unsubscribe()</a>
+                — Instructs the node to stop tracking one or more asset(s) or stream(s).</li>
+          </ul>
+          <h3>Inherited from <a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral.html">imperiansystems\multichain\MultiChainGeneral</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="getblockchainparams"><a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral/getblockchainparams.html">getblockchainparams()</a>
+                — Returns a list of values of this blockchain’s parameters.</li>
+            <li id="getinfo"><a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral/getinfo.html">getinfo()</a>
+                — Returns general information about this node and blockchain.</li>
+            <li id="getruntimeparams"><a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral/getruntimeparams.html">getruntimeparams()</a>
+                — Returns a selection of this node’s runtime parameters, which are set when the node starts up.</li>
+            <li id="help"><a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral/help.html">help()</a>
+                — Returns a list of available API commands, including MultiChain-specific commands.</li>
+            <li id="setruntimeparam"><a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral/setruntimeparam.html">setruntimeparam()</a>
+                — Sets the runtime parameter param to value and immediately applies the change.</li>
+            <li id="stop"><a title="imperiansystems\multichain\MultiChainGeneral" href="../traits/imperiansystems_multichain_MultiChainGeneral/stop.html">stop()</a>
+                — Shuts down the this blockchain node, i.e. stops the multichaind process.</li>
+          </ul>
+          <h3>Inherited from <a title="imperiansystems\multichain\MultiChainWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainWalletAddresses.html">imperiansystems\multichain\MultiChainWalletAddresses</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="addmultisigaddress"><a title="imperiansystems\multichain\MultiChainWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainWalletAddresses/addmultisigaddress.html">addmultisigaddress()</a>
+                — Creates a pay-to-scripthash (P2SH) multisig address and adds it to the wallet.</li>
+            <li id="getaddresses"><a title="imperiansystems\multichain\MultiChainWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainWalletAddresses/getaddresses.html">getaddresses()</a>
+                — Returns a list of addresses in this node’s wallet.</li>
+            <li id="getnewaddress"><a title="imperiansystems\multichain\MultiChainWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainWalletAddresses/getnewaddress.html">getnewaddress()</a>
+                — Returns a new address whose private key is added to the wallet.</li>
+            <li id="importaddress"><a title="imperiansystems\multichain\MultiChainWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainWalletAddresses/importaddress.html">importaddress()</a>
+                — Returns a list of addresses in this node’s wallet.</li>
+            <li id="listaddresses"><a title="imperiansystems\multichain\MultiChainWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainWalletAddresses/listaddresses.html">listaddresses()</a>
+                — Returns information about the addresses in the wallet.</li>
+          </ul>
+          <h3>Inherited from <a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses.html">imperiansystems\multichain\MultiChainNonWalletAddresses</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="createkeypairs"><a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses/createkeypairs.html">createkeypairs()</a>
+                — Generates one or more public/private key pairs, which are not stored in the wallet or drawn from the node’s key pool, ready for external key management.</li>
+            <li id="createmultisig"><a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses/createmultisig.html">createmultisig()</a>
+                — Creates a pay-to-scripthash (P2SH) multisig address.</li>
+            <li id="validateaddress"><a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses/validateaddress.html">validateaddress()</a>
+                — Returns information about 'address', or the address corresponding to the specified 'privkey' private key or 'pubkey' public key, including whether this node has the address’s private key in its wallet.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.11.1 - Copyright (C) 2010 - 2018 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>
