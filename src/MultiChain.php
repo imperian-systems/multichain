@@ -14,6 +14,7 @@ class MultiChain
 {
     use MultiChainGeneral;
     use MultiChainWalletAddresses;
+    use MultiChainNonWalletAddresses;
 
     /**
      * Handle to the JsonRPC client
@@ -41,21 +42,6 @@ class MultiChain
 
         $this->client = new Client($url.":".$port);
         $this->client->getHttpClient()->withUsername($rpc_user)->withPassword($rpc_password);
-    }
-
-    /**
-     * Generates one or more public/private key pairs, 
-     * which are not stored in the wallet or drawn from the node’s key pool, 
-     * ready for external key management. For each key pair, the address, pubkey 
-     * (as embedded in transaction inputs) and privkey (used for signatures) is provided.
-     *
-     * @access public
-     * @param  int   $count
-     * @return array 
-     */
-    public function createkeypairs($count = 1)
-    {
-        return $this->client->execute('createkeypairs', array($count));
     }
 
     /**
