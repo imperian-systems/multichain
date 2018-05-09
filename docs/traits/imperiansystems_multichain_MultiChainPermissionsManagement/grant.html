@@ -2,7 +2,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>phpDox - imperiansystems\multichain\MultiChain::create</title>
+    <title>phpDox - imperiansystems\multichain\MultiChainPermissionsManagement::grant</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   </head>
@@ -42,9 +42,9 @@
             <a href="../../classes.html#imperiansystems_multichain">imperiansystems\multichain</a>
           </li>
           <li class="separator">
-            <a title="imperiansystems\multichain\MultiChain" href="../../classes/imperiansystems_multichain_MultiChain.html">MultiChain</a>
+            <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../../traits/imperiansystems_multichain_MultiChainPermissionsManagement.html">MultiChainPermissionsManagement</a>
           </li>
-          <li class="separator">create</li>
+          <li class="separator">grant</li>
         </ul>
       </div>
       <nav class="box">
@@ -62,39 +62,63 @@
             <a href="#return">Return</a>
           </li>
           <li>
-            <a href="../../source/MultiChain.php.html#line74">Source</a>
+            <a href="../../source/MultiChainPermissionsManagement.php.html#line26">Source</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1><small>imperiansystems\multichain\MultiChain::</small>create</h1>
-        <h4>Creates a new stream on the blockchain called name.</h4>
-        <p>Pass the value "stream" in the type parameter.</p>
+        <h1><small>imperiansystems\multichain\MultiChainPermissionsManagement::</small>grant</h1>
+        <h4>Grants permissions to addresses, a comma-separated list of addresses.</h4>
+        <p/>
         <ul/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
-          <code>public function create(string
-        $type,
+          <code>public function grant(string
+        $addresses,
             string
-        $name,
-            [boolean
-        $open = false] )
+        $permissions,
+            [integer
+        $native_amount = 0,
+            [string
+        $start_block = '',
+            [string
+        $end_block = '',
+            [string
+        $comment = '',
+            [string
+        $comment_to = '']]]]] )
             </code>
         </div>
         <h2 id="parameterlist">Parameters</h2>
         <dl class="styled">
-          <dt><code>$type</code>
+          <dt><code>$addresses</code>
                 —
                 string</dt>
           <dd/>
-          <dt><code>$name</code>
+          <dt><code>$permissions</code>
                 —
                 string</dt>
           <dd/>
-          <dt><code>$open</code>
+          <dt><code>$native_amount</code>
                 —
-                boolean</dt>
-          <dd><br/><br/><br/>      </dd>
+                integer</dt>
+          <dd/>
+          <dt><code>$start_block</code>
+                —
+                string</dt>
+          <dd/>
+          <dt><code>$end_block</code>
+                —
+                string</dt>
+          <dd/>
+          <dt><code>$comment</code>
+                —
+                string</dt>
+          <dd/>
+          <dt><code>$comment_to</code>
+                —
+                string</dt>
+          <dd/>
         </dl>
         <h2 id="return">Returns</h2>
         <dl class="styled">

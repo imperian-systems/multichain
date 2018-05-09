@@ -15,6 +15,7 @@ class MultiChain
     use MultiChainGeneral;
     use MultiChainWalletAddresses;
     use MultiChainNonWalletAddresses;
+    use MultiChainPermissionsManagement;
 
     /**
      * Handle to the JsonRPC client
@@ -42,20 +43,6 @@ class MultiChain
 
         $this->client = new Client($url.":".$port);
         $this->client->getHttpClient()->withUsername($rpc_user)->withPassword($rpc_password);
-    }
-
-    /**
-     * Returns a list of all permissions which have been explicitly granted to addresses.
-     *
-     * @access public
-     * @param  string   $permissions
-     * @param  string   $addresses
-     * @param  bool     $verbose
-     * @return array 
-     */
-    public function listpermissions($permissions = "*", $addresses = "*", $verbose = false)
-    {
-        return $this->client->execute('listpermissions', array($permissions, $addresses, $verbose));
     }
 
     /**

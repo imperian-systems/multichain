@@ -77,7 +77,6 @@
         <div class="synopsis">class MultiChain
             {<br/><ul class="none"><li>// members</li><li>private <span title="imperiansystems\multichain\JsonRPC\Client">Client</span> <a href="#members">$client</a>;
                     </li></ul><ul class="none"><li>// methods</li><li>public void <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/__construct.html">__construct</a>()
-                    </li><li>public array <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/listpermissions.html">listpermissions</a>()
                     </li><li>public array <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/liststreams.html">liststreams</a>()
                     </li><li>public string <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/create.html">create</a>()
                     </li><li>public string <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/publish.html">publish</a>()
@@ -101,6 +100,13 @@
                         </li></ul><ul class="none"><li>// Inherited methods from <span title="imperiansystems\multichain\MultiChainNonWalletAddresses">MultiChainNonWalletAddresses</span></li><li>public array <a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses/createkeypairs.html">createkeypairs</a>()
                         </li><li>public array <a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses/createmultisig.html">createmultisig</a>()
                         </li><li>public array <a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses/validateaddress.html">validateaddress</a>()
+                        </li></ul><ul class="none"><li>// Inherited methods from <span title="imperiansystems\multichain\MultiChainPermissionsManagement">MultiChainPermissionsManagement</span></li><li>public string <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/grant.html">grant</a>()
+                        </li><li>public string <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/grantfrom.html">grantfrom</a>()
+                        </li><li>public string <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/grantwithdata.html">grantwithdata</a>()
+                        </li><li>public string <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/grantwithdatafrom.html">grantwithdatafrom</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/listpermissions.html">listpermissions</a>()
+                        </li><li>public string <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/revoke.html">revoke</a>()
+                        </li><li>public string <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/revokefrom.html">revokefrom</a>()
                         </li></ul>
 
             }<br/></div>
@@ -116,6 +122,9 @@
             </li>
             <li>
               <a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses.html">imperiansystems\multichain\MultiChainNonWalletAddresses</a>
+            </li>
+            <li>
+              <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement.html">imperiansystems\multichain\MultiChainPermissionsManagement</a>
             </li>
           </ul>
         </div>
@@ -142,8 +151,6 @@
                 — Retrieves a specific item with txid from stream, passed as a stream name, ref or creation txid, to which the node must be subscribed.</li>
             <li id="gettxoutdata"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/gettxoutdata.html">gettxoutdata()</a>
                 — Returns the data embedded in output vout of transaction txid, in hexadecimal.</li>
-            <li id="listpermissions"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/listpermissions.html">listpermissions()</a>
-                — Returns a list of all permissions which have been explicitly granted to addresses.</li>
             <li id="liststreamitems"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/liststreamitems.html">liststreamitems()</a>
                 — Lists items in stream, passed as a stream name, ref or creation txid.</li>
             <li id="liststreams"><a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/liststreams.html">liststreams()</a>
@@ -194,6 +201,24 @@
                 — Creates a pay-to-scripthash (P2SH) multisig address.</li>
             <li id="validateaddress"><a title="imperiansystems\multichain\MultiChainNonWalletAddresses" href="../traits/imperiansystems_multichain_MultiChainNonWalletAddresses/validateaddress.html">validateaddress()</a>
                 — Returns information about 'address', or the address corresponding to the specified 'privkey' private key or 'pubkey' public key, including whether this node has the address’s private key in its wallet.</li>
+          </ul>
+          <h3>Inherited from <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement.html">imperiansystems\multichain\MultiChainPermissionsManagement</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="grant"><a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/grant.html">grant()</a>
+                — Grants permissions to addresses, a comma-separated list of addresses.</li>
+            <li id="grantfrom"><a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/grantfrom.html">grantfrom()</a>
+                — This works like grant, but with control over the from-address used to grant the permissions.</li>
+            <li id="grantwithdata"><a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/grantwithdata.html">grantwithdata()</a>
+                — This works like grant, but with an additional data-only transaction output.</li>
+            <li id="grantwithdatafrom"><a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/grantwithdatafrom.html">grantwithdatafrom()</a>
+                — This works like grantwithdata, but with control over the from-address used to grant the permissions.</li>
+            <li id="listpermissions"><a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/listpermissions.html">listpermissions()</a>
+                — Returns a list of all permissions which have been explicitly granted to addresses.</li>
+            <li id="revoke"><a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/revoke.html">revoke()</a>
+                — Revokes 'permissions' from 'addresses', a comma-separated list of addresses.</li>
+            <li id="revokefrom"><a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/revokefrom.html">revokefrom()</a>
+                — This works like revoke, but with control over the from-address used to revoke the permissions.</li>
           </ul>
         </div>
       </section>
