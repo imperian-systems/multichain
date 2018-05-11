@@ -1,6 +1,6 @@
 <?php
 
-namespace imperiansystems\multichain\facades;
+namespace imperiansystems\multichain;
 
 /**
  * MultiChain non-wallet address management 

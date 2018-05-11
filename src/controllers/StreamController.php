@@ -1,33 +1,22 @@
 <?php
 
-namespace imperiansystems\multichain;
+namespace imperiansystems\multichain\controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-// use Facades\imperiansystems\multichain\MultiChain;
+use Facades\imperiansystems\multichain\facades\MultiChain;
 
-class ItemController extends Controller
+class StreamController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        $stream = $request->input('stream');
-        $keys = $request->input('keys');
-
-        if($keys)
-        {
-            $items = MultiChain::liststreamkeys($stream, $keys, true);
-        }
-        else
-        {
-            $items = MultiChain::liststreamitems($stream, true, 128);
-        }
-
-        return view('multichain::item.index', [ 'stream'=>$stream, 'items'=>$items ]);
+        $streams = MultiChain::liststreams("*", true);
+        return view('multichain::stream.index', [ 'streams'=>$streams ]);
     }
 
     /**
@@ -57,24 +46,11 @@ class ItemController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request, $txid)
+    public function show($id)
     {
-        $stream = $request->input('stream');
-        $item = MultiChain::getstreamitem($stream, $txid);
-
-        if(is_array($item['data']))
-        {
-            $data = hex2bin(MultiChain::gettxoutdata($item['data']['txid'], 
-                                                     $item['data']['vout'], 
-                                                     $item['data']['size'], 0));
-            $finfo = new \finfo(FILEINFO_MIME_TYPE);
-            header('Content-type: '.$finfo->buffer($data));
-
-            print $data;
-            return;
-        }
-
-        return view('multichain::item.show', [ 'item'=>$item ]);
+        $stream = MultiChain::liststreams($id, true);
+        $permissions = MultiChain::listpermissions($id.".*", "*", true);
+        return view('multichain::stream.show', [ 'stream'=>$stream[0], 'permissions'=>$permissions ]);
     }
 
     /**

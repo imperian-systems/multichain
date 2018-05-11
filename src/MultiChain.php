@@ -1,6 +1,6 @@
 <?php
 
-namespace imperiansystems\multichain\facades;
+namespace imperiansystems\multichain;
 
 use JsonRPC\Client; /* Composer package fguillot/json-rpc */
 
