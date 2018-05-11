@@ -4,7 +4,7 @@ namespace imperiansystems\multichain\controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-// use Facades\imperiansystems\multichain\MultiChain;
+use MultiChain;
 
 class ItemController extends Controller
 {
