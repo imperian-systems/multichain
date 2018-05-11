@@ -17,7 +17,7 @@
                 "imperiansystems\\multichain\\MultiChainServiceProvider"
             ],
             "aliases": {
-                "MultiChain": "Facades\\imperiansystems\\multichain\\facades\\MultiChain"
+                "MultiChain": "imperiansystems\\multichain\\facades\\MultiChain"
             }
         }
     },

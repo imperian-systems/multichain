@@ -4,7 +4,7 @@ namespace imperiansystems\multichain;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Facades\imperiansystems\multichain\MultiChain;
+// use Facades\imperiansystems\multichain\MultiChain;
 
 class StreamController extends Controller
 {
