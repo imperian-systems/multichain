@@ -27,18 +27,6 @@ MULTICHAIN_RPC_USER=multichainrpc
 MULTICHAIN_RPC_PASSWORD=password
 ````
 
-Add to config/app.php, in the providers array:
-
-````
-imperiansystems\multichain\MultiChainServiceProvider::class,
-````
-
-To use:
-
-````
-use Facades\imperiansystems\multichain\MultiChain;
-````
-
 ### List streams on this node
 ````
 $streams = MultiChain::liststreams();
@@ -47,8 +35,8 @@ var_dump($streams);
 
 ### Subscribe to a stream and list items on it 
 ````
-MultiChain::subscribe("Public Record");
-$stream_items = MultiChain::liststreamitems("Public Record");
+MultiChain::subscribe("Stream 1");
+$stream_items = MultiChain::liststreamitems("Stream 1");
 var_dump($stream_items);
 ````
 
@@ -62,25 +50,25 @@ $text = "Hello, this will be appearing unencrypted on the Public Record stream i
 $key = Uuid::generate(4);
 
 /* Publish to the Public Record stream of the blockchain */
-$txid = MultiChain::publish("Public Record", $key, bin2hex($text));
+$txid = MultiChain::publish("Stream 1", $key, bin2hex($text));
 
 print "Transaction id: $txid\n";
 
 /* Retrieve and print data */
-$data = MultiChain::getstreamitem("Public Record", $txid);
+$data = MultiChain::getstreamitem("Stream 1", $txid);
 print "Original content: ".hex2bin($data)."\n";
 ````
 
 ### Add more than 16K to stream
 ````
 $image = file_get_contents("/tmp/test.jpg");
-$txid = MultiChain::publish("Public Record", $key, bin2hex($image));
+$txid = MultiChain::publish("Stream 1", $key, bin2hex($image));
 
 // print "Transaction id: $txid\n";
 
 
 /* Retrieve and display image */
-$metadata = MultiChain::getstreamitem("Public Record", $txid);
+$metadata = MultiChain::getstreamitem("Stream 1", $txid);
 $vout = $metadata['data']['vout'];
 $size = $metadata['data']['size'];
 
