@@ -11,6 +11,16 @@
             "imperiansystems\\multichain\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "imperiansystems\\multichain\\MultiChainServiceProvider"
+            ],
+            "aliases": {
+                "MultiChain": "Facades\\imperiansystems\\multichain\\MultiChain"
+            }
+        }
+    },
     "license": "MIT",
     "authors": [
         {
