@@ -27,6 +27,12 @@ MULTICHAIN_RPC_USER=multichainrpc
 MULTICHAIN_RPC_PASSWORD=password
 ````
 
+To use the facade:
+
+````
+use MultiChain;
+````
+
 ### List streams on this node
 ````
 $streams = MultiChain::liststreams();
