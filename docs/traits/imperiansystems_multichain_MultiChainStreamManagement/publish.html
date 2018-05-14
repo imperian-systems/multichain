@@ -2,7 +2,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>phpDox - imperiansystems\multichain\MultiChain::liststreamitems</title>
+    <title>phpDox - imperiansystems\multichain\MultiChainStreamManagement::publish</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   </head>
@@ -42,9 +42,9 @@
             <a href="../../classes.html#imperiansystems_multichain">imperiansystems\multichain</a>
           </li>
           <li class="separator">
-            <a title="imperiansystems\multichain\MultiChain" href="../../classes/imperiansystems_multichain_MultiChain.html">MultiChain</a>
+            <a title="imperiansystems\multichain\MultiChainStreamManagement" href="../../traits/imperiansystems_multichain_MultiChainStreamManagement.html">MultiChainStreamManagement</a>
           </li>
-          <li class="separator">liststreamitems</li>
+          <li class="separator">publish</li>
         </ul>
       </div>
       <nav class="box">
@@ -62,27 +62,23 @@
             <a href="#return">Return</a>
           </li>
           <li>
-            <a href="../../source/MultiChain.php.html#line160">Source</a>
+            <a href="../../source/MultiChainStreamManagement.php.html#line71">Source</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1><small>imperiansystems\multichain\MultiChain::</small>liststreamitems</h1>
-        <h4>Lists items in stream, passed as a stream name, ref or creation txid.</h4>
+        <h1><small>imperiansystems\multichain\MultiChainStreamManagement::</small>publish</h1>
+        <h4>Publishes an item in stream, passed as a stream name, ref or creation txid, with key provided in text form and data in hexadecimal.</h4>
         <p/>
         <ul/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
-          <code>public function liststreamitems(string
+          <code>public function publish(string
         $stream,
-            [boolean
-        $verbose = false,
-            [integer
-        $count = 10,
-            [boolean
-        $start = false,
-            [boolean
-        $local_ordering = false]]]] )
+            string
+        $key,
+            string
+        $data )
             </code>
         </div>
         <h2 id="parameterlist">Parameters</h2>
@@ -91,26 +87,18 @@
                 —
                 string</dt>
           <dd/>
-          <dt><code>$verbose</code>
+          <dt><code>$key</code>
                 —
-                boolean</dt>
-          <dd><br/><br/><br/>      </dd>
-          <dt><code>$count</code>
-                —
-                integer</dt>
+                string</dt>
           <dd/>
-          <dt><code>$start</code>
+          <dt><code>$data</code>
                 —
-                boolean</dt>
+                string</dt>
           <dd/>
-          <dt><code>$local_ordering</code>
-                —
-                boolean</dt>
-          <dd><br/><br/><br/>      </dd>
         </dl>
         <h2 id="return">Returns</h2>
         <dl class="styled">
-          <dt>array</dt>
+          <dt>string</dt>
           <dd/>
         </dl>
       </section>

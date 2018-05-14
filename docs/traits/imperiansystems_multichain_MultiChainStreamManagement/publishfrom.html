@@ -2,7 +2,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>phpDox - imperiansystems\multichain\MultiChain::subscribe</title>
+    <title>phpDox - imperiansystems\multichain\MultiChainStreamManagement::publishfrom</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   </head>
@@ -42,9 +42,9 @@
             <a href="../../classes.html#imperiansystems_multichain">imperiansystems\multichain</a>
           </li>
           <li class="separator">
-            <a title="imperiansystems\multichain\MultiChain" href="../../classes/imperiansystems_multichain_MultiChain.html">MultiChain</a>
+            <a title="imperiansystems\multichain\MultiChainStreamManagement" href="../../traits/imperiansystems_multichain_MultiChainStreamManagement.html">MultiChainStreamManagement</a>
           </li>
-          <li class="separator">subscribe</li>
+          <li class="separator">publishfrom</li>
         </ul>
       </div>
       <nav class="box">
@@ -59,33 +59,53 @@
             <a href="#parameter">Parameter</a>
           </li>
           <li>
-            <a href="../../source/MultiChain.php.html#line105">Source</a>
+            <a href="#return">Return</a>
+          </li>
+          <li>
+            <a href="../../source/MultiChainStreamManagement.php.html#line88">Source</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1><small>imperiansystems\multichain\MultiChain::</small>subscribe</h1>
-        <h4>Instructs the node to start tracking one or more asset(s) or stream(s).</h4>
+        <h1><small>imperiansystems\multichain\MultiChainStreamManagement::</small>publishfrom</h1>
+        <h4>Publishes an item in stream, passed as a stream name, ref or creation txid, with key provided in text form and data in hexadecimal.</h4>
         <p/>
         <ul/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
-          <code>public function subscribe(string
-        $name,
-            [boolean
-        $rescan = true] )
+          <code>public function publishfrom(string
+        $from_address,
+            string
+        $stream,
+            string
+        $key,
+            string
+        $data )
             </code>
         </div>
         <h2 id="parameterlist">Parameters</h2>
         <dl class="styled">
-          <dt><code>$name</code>
+          <dt><code>$from_address</code>
                 —
                 string</dt>
           <dd/>
-          <dt><code>$rescan</code>
+          <dt><code>$stream</code>
                 —
-                boolean</dt>
-          <dd><br/><br/><br/>      </dd>
+                string</dt>
+          <dd/>
+          <dt><code>$key</code>
+                —
+                string</dt>
+          <dd/>
+          <dt><code>$data</code>
+                —
+                string</dt>
+          <dd/>
+        </dl>
+        <h2 id="return">Returns</h2>
+        <dl class="styled">
+          <dt>string</dt>
+          <dd/>
         </dl>
       </section>
     </div>
