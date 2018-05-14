@@ -2,7 +2,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>phpDox - imperiansystems\multichain\MultiChain::__construct</title>
+    <title>phpDox - imperiansystems\multichain\MultiChainStreamManagement::liststreamkeys</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   </head>
@@ -42,9 +42,9 @@
             <a href="../../classes.html#imperiansystems_multichain">imperiansystems\multichain</a>
           </li>
           <li class="separator">
-            <a title="imperiansystems\multichain\MultiChain" href="../../classes/imperiansystems_multichain_MultiChain.html">MultiChain</a>
+            <a title="imperiansystems\multichain\MultiChainStreamManagement" href="../../traits/imperiansystems_multichain_MultiChainStreamManagement.html">MultiChainStreamManagement</a>
           </li>
-          <li class="separator">__construct</li>
+          <li class="separator">liststreamkeys</li>
         </ul>
       </div>
       <nav class="box">
@@ -59,45 +59,65 @@
             <a href="#parameter">Parameter</a>
           </li>
           <li>
-            <a href="../../source/MultiChain.php.html#line41">Source</a>
+            <a href="#return">Return</a>
+          </li>
+          <li>
+            <a href="../../source/MultiChainStreamManagement.php.html#line196">Source</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1><small>imperiansystems\multichain\MultiChain::</small>__construct</h1>
-        <h4>Constructor</h4>
+        <h1><small>imperiansystems\multichain\MultiChainStreamManagement::</small>liststreamkeys</h1>
+        <h4>Provides information about keys in stream, passed as a stream name, ref or creation txid.</h4>
         <p/>
         <ul/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
-          <code>public function __construct([string
-        $url = "",
-            [integer
-        $port = 0,
+          <code>public function liststreamkeys(string
+        $stream,
             [string
-        $rpc_user = "",
-            [string
-        $rpc_password = ""]]]] )
+        $keys = "*",
+            [boolean
+        $verbose = false,
+            [int
+        $count = self::MAX,
+            [boolean
+        $start = false,
+            [boolean
+        $local_ordering = false]]]]] )
             </code>
         </div>
         <h2 id="parameterlist">Parameters</h2>
         <dl class="styled">
-          <dt><code>$url</code>
+          <dt><code>$stream</code>
                 —
                 string</dt>
-          <dd>Server URL</dd>
-          <dt><code>$port</code>
-                —
-                integer</dt>
-          <dd>Server port</dd>
-          <dt><code>$rpc_user</code>
+          <dd/>
+          <dt><code>$keys</code>
                 —
                 string</dt>
-          <dd>MultiChain RPC user</dd>
-          <dt><code>$rpc_password</code>
+          <dd><br/><br/><br/>      </dd>
+          <dt><code>$verbose</code>
                 —
-                string</dt>
-          <dd>MultiChain RPC password</dd>
+                boolean</dt>
+          <dd><br/><br/><br/>      </dd>
+          <dt><code>$count</code>
+                —
+                int</dt>
+          <dd/>
+          <dt><code>$start</code>
+                —
+                boolean</dt>
+          <dd/>
+          <dt><code>$local_ordering</code>
+                —
+                boolean</dt>
+          <dd><br/><br/><br/>      </dd>
+        </dl>
+        <h2 id="return">Returns</h2>
+        <dl class="styled">
+          <dt>array</dt>
+          <dd/>
         </dl>
       </section>
     </div>
