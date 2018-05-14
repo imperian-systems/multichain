@@ -70,7 +70,7 @@ trait MultiChainWalletAddresses
      * @param  int        $start
      * @return array
      */
-    public function listaddresses($addresses = "*", $verbose = false, $count = 128, $start = false)
+    public function listaddresses($addresses = "*", $verbose = false, $count = self::MAX, $start = false)
     {
         if($start === false) $start = 0 - $count;
         return $this->client->execute('listaddresses', array($addresses, $verbose, $count, $start));

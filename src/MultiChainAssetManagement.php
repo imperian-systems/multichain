@@ -97,5 +97,7 @@ trait MultiChainAssetManagement
      */
      public function listassets($assets = "*", $verbose = false, $count = self::MAX, $start = false)
      {
+         if($start === false) $start = 0 - $count;
+         return $this->client->execute('listassets', array($assets, $verbose, $count, $start));
      }
 }
