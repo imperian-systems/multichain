@@ -18,6 +18,8 @@ class MultiChain
     use MultiChainPermissionsManagement;
     use MultiChainStreamManagement;
 
+    const MAX = 128;
+
     /**
      * Handle to the JsonRPC client
      *
