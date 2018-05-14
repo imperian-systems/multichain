@@ -2,7 +2,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>phpDox - imperiansystems\multichain\MultiChain::__construct</title>
+    <title>phpDox - imperiansystems\multichain\MultiChainAssetManagement::issuemore</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   </head>
@@ -42,9 +42,9 @@
             <a href="../../classes.html#imperiansystems_multichain">imperiansystems\multichain</a>
           </li>
           <li class="separator">
-            <a title="imperiansystems\multichain\MultiChain" href="../../classes/imperiansystems_multichain_MultiChain.html">MultiChain</a>
+            <a title="imperiansystems\multichain\MultiChainAssetManagement" href="../../traits/imperiansystems_multichain_MultiChainAssetManagement.html">MultiChainAssetManagement</a>
           </li>
-          <li class="separator">__construct</li>
+          <li class="separator">issuemore</li>
         </ul>
       </div>
       <nav class="box">
@@ -59,45 +59,59 @@
             <a href="#parameter">Parameter</a>
           </li>
           <li>
-            <a href="../../source/MultiChain.php.html#line40">Source</a>
+            <a href="#return">Return</a>
+          </li>
+          <li>
+            <a href="../../source/MultiChainAssetManagement.php.html#line63">Source</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1><small>imperiansystems\multichain\MultiChain::</small>__construct</h1>
-        <h4>Constructor</h4>
+        <h1><small>imperiansystems\multichain\MultiChainAssetManagement::</small>issuemore</h1>
+        <h4>Issues 'qty' additional units of 'asset', sending them to 'address'.</h4>
         <p/>
         <ul/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
-          <code>public function __construct([string
-        $url = "",
-            [integer
-        $port = 0,
+          <code>public function issuemore(string
+        $address,
+            string
+        $asset,
+            float
+        $qty,
             [string
-        $rpc_user = "",
+        $native_amount = '',
             [string
-        $rpc_password = ""]]]] )
+        $custom_fields = '']] )
             </code>
         </div>
         <h2 id="parameterlist">Parameters</h2>
         <dl class="styled">
-          <dt><code>$url</code>
+          <dt><code>$address</code>
                 —
                 string</dt>
-          <dd>Server URL</dd>
-          <dt><code>$port</code>
-                —
-                integer</dt>
-          <dd>Server port</dd>
-          <dt><code>$rpc_user</code>
+          <dd/>
+          <dt><code>$asset</code>
                 —
                 string</dt>
-          <dd>MultiChain RPC user</dd>
-          <dt><code>$rpc_password</code>
+          <dd/>
+          <dt><code>$qty</code>
+                —
+                float</dt>
+          <dd/>
+          <dt><code>$native_amount</code>
                 —
                 string</dt>
-          <dd>MultiChain RPC password</dd>
+          <dd/>
+          <dt><code>$custom_fields</code>
+                —
+                string</dt>
+          <dd/>
+        </dl>
+        <h2 id="return">Returns</h2>
+        <dl class="styled">
+          <dt>string</dt>
+          <dd/>
         </dl>
       </section>
     </div>
