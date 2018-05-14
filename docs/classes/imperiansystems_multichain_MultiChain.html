@@ -56,6 +56,9 @@
             <a href="#hierarchy">Hierarchy</a>
           </li>
           <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
             <a href="#members">Members</a>
           </li>
           <li>
@@ -75,7 +78,7 @@
         </ul>
         <h2 id="synopsis">Synopsis</h2>
         <div class="synopsis">class MultiChain
-            {<br/><ul class="none"><li>// members</li><li>private <span title="imperiansystems\multichain\JsonRPC\Client">Client</span> <a href="#members">$client</a>;
+            {<br/><ul class="none"><li>// constants</li><li>const MAX = 128;</li></ul><ul class="none"><li>// members</li><li>private <span title="imperiansystems\multichain\JsonRPC\Client">Client</span> <a href="#members">$client</a>;
                     </li></ul><ul class="none"><li>// methods</li><li>public void <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/__construct.html">__construct</a>()
                     </li><li>public array <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/liststreams.html">liststreams</a>()
                     </li><li>public string <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain/create.html">create</a>()
@@ -107,6 +110,11 @@
                         </li><li>public array <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/listpermissions.html">listpermissions</a>()
                         </li><li>public string <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/revoke.html">revoke</a>()
                         </li><li>public string <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/revokefrom.html">revokefrom</a>()
+                        </li></ul><ul class="none"><li>// Inherited methods from <span title="imperiansystems\multichain\MultiChainAssetManagement">MultiChainAssetManagement</span></li><li>public string <a title="imperiansystems\multichain\MultiChainAssetManagement" href="../traits/imperiansystems_multichain_MultiChainAssetManagement/issue.html">issue</a>()
+                        </li><li>public string <a title="imperiansystems\multichain\MultiChainAssetManagement" href="../traits/imperiansystems_multichain_MultiChainAssetManagement/issuefrom.html">issuefrom</a>()
+                        </li><li>public string <a title="imperiansystems\multichain\MultiChainAssetManagement" href="../traits/imperiansystems_multichain_MultiChainAssetManagement/issuemore.html">issuemore</a>()
+                        </li><li>public string <a title="imperiansystems\multichain\MultiChainAssetManagement" href="../traits/imperiansystems_multichain_MultiChainAssetManagement/issuemorefrom.html">issuemorefrom</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainAssetManagement" href="../traits/imperiansystems_multichain_MultiChainAssetManagement/listassets.html">listassets</a>()
                         </li></ul>
 
             }<br/></div>
@@ -126,8 +134,26 @@
             <li>
               <a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement.html">imperiansystems\multichain\MultiChainPermissionsManagement</a>
             </li>
+            <li>
+              <a title="imperiansystems\multichain\MultiChainAssetManagement" href="../traits/imperiansystems_multichain_MultiChainAssetManagement.html">imperiansystems\multichain\MultiChainAssetManagement</a>
+            </li>
           </ul>
         </div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="MAX">MAX</td>
+              <td>128</td>
+            </tr>
+          </tbody>
+        </table>
         <h2 id="members">Members</h2>
         <div class="styled members">
           <h4>private</h4>
@@ -219,6 +245,20 @@
                 — Revokes 'permissions' from 'addresses', a comma-separated list of addresses.</li>
             <li id="revokefrom"><a title="imperiansystems\multichain\MultiChainPermissionsManagement" href="../traits/imperiansystems_multichain_MultiChainPermissionsManagement/revokefrom.html">revokefrom()</a>
                 — This works like revoke, but with control over the from-address used to revoke the permissions.</li>
+          </ul>
+          <h3>Inherited from <a title="imperiansystems\multichain\MultiChainAssetManagement" href="../traits/imperiansystems_multichain_MultiChainAssetManagement.html">imperiansystems\multichain\MultiChainAssetManagement</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="issue"><a title="imperiansystems\multichain\MultiChainAssetManagement" href="../traits/imperiansystems_multichain_MultiChainAssetManagement/issue.html">issue()</a>
+                — Creates a new asset on the blockchain, sending the initial 'qty' units to 'address'.</li>
+            <li id="issuefrom"><a title="imperiansystems\multichain\MultiChainAssetManagement" href="../traits/imperiansystems_multichain_MultiChainAssetManagement/issuefrom.html">issuefrom()</a>
+                — This works like issue, but with control over the from-address used to issue the asset.</li>
+            <li id="issuemore"><a title="imperiansystems\multichain\MultiChainAssetManagement" href="../traits/imperiansystems_multichain_MultiChainAssetManagement/issuemore.html">issuemore()</a>
+                — Issues 'qty' additional units of 'asset', sending them to 'address'.</li>
+            <li id="issuemorefrom"><a title="imperiansystems\multichain\MultiChainAssetManagement" href="../traits/imperiansystems_multichain_MultiChainAssetManagement/issuemorefrom.html">issuemorefrom()</a>
+                — This works like issuemore, but with control over the from-address used.</li>
+            <li id="listassets"><a title="imperiansystems\multichain\MultiChainAssetManagement" href="../traits/imperiansystems_multichain_MultiChainAssetManagement/listassets.html">listassets()</a>
+                — Returns information about assets issued on the blockchain.</li>
           </ul>
         </div>
       </section>

@@ -16,6 +16,9 @@ class MultiChain
     use MultiChainWalletAddresses;
     use MultiChainNonWalletAddresses;
     use MultiChainPermissionsManagement;
+    use MultiChainAssetManagement;
+
+    const MAX = 128;
 
     /**
      * Handle to the JsonRPC client
