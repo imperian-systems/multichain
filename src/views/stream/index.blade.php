@@ -1,4 +1,4 @@
-@extends('monarch_forms::layouts.lpor') 
+@extends('layouts.main') 
 
 @section('title', 'Streams') 
 
