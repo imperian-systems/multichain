@@ -38,7 +38,12 @@ trait MultiChainPtP
      */
     public function getaddednodeinfo($verbose, $ip = '', $port = '')
     {
-        return $this->client->execute('getaddednodeinfo', array($verbose, $ip, $port));
+        if(strlen($ip) && strlen($port))
+        {
+            return $this->client->execute('getaddednodeinfo', array($verbose, $ip, $port));
+        }
+
+        return $this->client->execute('getaddednodeinfo', array($verbose));
     }
 
     /**
