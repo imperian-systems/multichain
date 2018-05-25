@@ -18,6 +18,7 @@ class MultiChain
     use MultiChainPermissionsManagement;
     use MultiChainAssetManagement;
     use MultiChainStreamManagement;
+    use MultiChainPtP;
 
     const MAX = 128;
 
