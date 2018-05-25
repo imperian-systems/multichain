@@ -20,7 +20,7 @@ trait MultiChainPtP
      * @param  string  $command
      * @return null
      */
-    public function addnode($ip, $port = 7749, $command)
+    public function addnode($ip, $port, $command)
     {
         return $this->client->execute('addnode', array($ip, $port, $command));
     }
@@ -36,8 +36,44 @@ trait MultiChainPtP
      * @param  int     $port
      * @return array 
      */
-    public function getaddednodeinfo($verbose, $ip, $port = 7749)
+    public function getaddednodeinfo($verbose, $ip = '', $port = '')
     {
         return $this->client->execute('getaddednodeinfo', array($verbose, $ip, $port));
+    }
+
+    /**
+     * Returns information about the network ports to which 
+     * the node is connected, and its local IP addresses. 
+     *
+     * @access public
+     * @return array 
+     */
+    public function getnetworkinfo()
+    {
+        return $this->client->execute('getnetworkinfo', array());
+    }
+
+    /**
+     * Returns information about the other nodes to which 
+     * this node is connected.
+     *
+     * @access public
+     * @return array 
+     */
+    public function getpeerinfo()
+    {
+        return $this->client->execute('getpeerinfo', array());
+    }
+
+    /**
+     * Sends a ping message to all connected nodes to measure 
+     * network latency and backlog. 
+     *
+     * @access public
+     * @return array 
+     */
+    public function ping()
+    {
+        return $this->client->execute('ping', array());
     }
 }
