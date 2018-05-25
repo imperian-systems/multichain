@@ -18,6 +18,9 @@ class MultiChain
     use MultiChainPermissionsManagement;
     use MultiChainAssetManagement;
     use MultiChainStreamManagement;
+    use MultiChainPtP;
+    use MultiChainQueryBlockchain;
+    use MultiChainAdvancedWalletControl;
 
     const MAX = 128;
 
