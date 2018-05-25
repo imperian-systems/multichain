@@ -19,6 +19,7 @@ class MultiChain
     use MultiChainAssetManagement;
     use MultiChainStreamManagement;
     use MultiChainPtP;
+    use MultiChainQueryBlockchain;
 
     const MAX = 128;
 
