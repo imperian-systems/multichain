@@ -3,6 +3,7 @@
 namespace imperiansystems\multichain\controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use MultiChain;
 
 class NodeController extends Controller
