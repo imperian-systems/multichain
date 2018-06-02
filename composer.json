@@ -13,9 +13,6 @@
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "imperiansystems\\multichain\\MultiChainServiceProvider"
-            ],
             "aliases": {
                 "MultiChain": "imperiansystems\\multichain\\Facades\\MultiChainFacade"
             }
