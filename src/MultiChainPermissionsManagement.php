@@ -16,19 +16,11 @@ trait MultiChainPermissionsManagement
      * @access public
      * @param  string $addresses
      * @param  string $permissions
-     * @param  float  $native_amount
-     * @param  int    $start_block
-     * @param  int    $end_block
-     * @param  string $comment
-     * @param  string $comment_to
      * @return string
      */
-    public function grant($addresses, $permissions, $native_amount = 0, $start_block = '', 
-                          $end_block = '', $comment = '', $comment_to = '')
+    public function grant($addresses, $permissions)
     {
-        return $this->client->execute('grant', array($addresses, $permissions, $native_amount, 
-                                                     $start_block, $end_block, $comment, 
-                                                     $comment_to));
+        return $this->client->execute('grant', array($addresses, $permissions));
     }
 
     /**
