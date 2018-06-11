@@ -2,7 +2,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>phpDox - imperiansystems\multichain\controllers\StreamController::index</title>
+    <title>phpDox - imperiansystems\multichain\MultiChainPtP::getaddednodeinfo</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   </head>
@@ -39,12 +39,12 @@
             <a href="../../classes.html">Classes</a>
           </li>
           <li class="separator">
-            <a href="../../classes.html#imperiansystems_multichain_controllers">imperiansystems\multichain\controllers</a>
+            <a href="../../classes.html#imperiansystems_multichain">imperiansystems\multichain</a>
           </li>
           <li class="separator">
-            <a title="imperiansystems\multichain\controllers\StreamController" href="../../classes/imperiansystems_multichain_controllers_StreamController.html">StreamController</a>
+            <a title="imperiansystems\multichain\MultiChainPtP" href="../../traits/imperiansystems_multichain_MultiChainPtP.html">MultiChainPtP</a>
           </li>
-          <li class="separator">index</li>
+          <li class="separator">getaddednodeinfo</li>
         </ul>
       </div>
       <nav class="box">
@@ -56,28 +56,50 @@
             <a href="#synopsis">Synopsis</a>
           </li>
           <li>
+            <a href="#parameter">Parameter</a>
+          </li>
+          <li>
             <a href="#return">Return</a>
           </li>
           <li>
-            <a href="../../source/controllers/StreamController.php.html#line16">Source</a>
+            <a href="../../source/MultiChainPtP.php.html#line39">Source</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1><small>imperiansystems\multichain\controllers\StreamController::</small>index</h1>
-        <h4>Display a listing of the resource.</h4>
+        <h1><small>imperiansystems\multichain\MultiChainPtP::</small>getaddednodeinfo</h1>
+        <h4>If verbose=true, returns information about a node which was added using addnode, or all such nodes if ip(:port) is omitted.</h4>
         <p/>
         <ul/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
-          <code>public function index()
+          <code>public function getaddednodeinfo(<a title="imperiansystems\multichain\bool" href="../../traits/imperiansystems_multichain_bool.html">bool</a>
+        $verbose,
+            [string
+        $ip = '',
+            [string
+        $port = '']] )
             </code>
         </div>
+        <h2 id="parameterlist">Parameters</h2>
+        <dl class="styled">
+          <dt><code>$verbose</code>
+                —
+                object</dt>
+          <dd><br/><br/><br/>      </dd>
+          <dt><code>$ip</code>
+                —
+                string</dt>
+          <dd/>
+          <dt><code>$port</code>
+                —
+                string</dt>
+          <dd/>
+        </dl>
         <h2 id="return">Returns</h2>
         <dl class="styled">
-          <dt>Response</dt>
-          <dd><br/>
-        </dd>
+          <dt>array</dt>
+          <dd/>
         </dl>
       </section>
     </div>

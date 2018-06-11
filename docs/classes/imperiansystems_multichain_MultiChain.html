@@ -120,6 +120,15 @@
                         </li><li>public array <a title="imperiansystems\multichain\MultiChainStreamManagement" href="../traits/imperiansystems_multichain_MultiChainStreamManagement/liststreamkeyitems.html">liststreamkeyitems</a>()
                         </li><li>public array <a title="imperiansystems\multichain\MultiChainStreamManagement" href="../traits/imperiansystems_multichain_MultiChainStreamManagement/liststreamkeys.html">liststreamkeys</a>()
                         </li><li>public array <a title="imperiansystems\multichain\MultiChainStreamManagement" href="../traits/imperiansystems_multichain_MultiChainStreamManagement/liststreamitems.html">liststreamitems</a>()
+                        </li></ul><ul class="none"><li>// Inherited methods from <span title="imperiansystems\multichain\MultiChainPtP">MultiChainPtP</span></li><li>public null <a title="imperiansystems\multichain\MultiChainPtP" href="../traits/imperiansystems_multichain_MultiChainPtP/addnode.html">addnode</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainPtP" href="../traits/imperiansystems_multichain_MultiChainPtP/getaddednodeinfo.html">getaddednodeinfo</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainPtP" href="../traits/imperiansystems_multichain_MultiChainPtP/getnetworkinfo.html">getnetworkinfo</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainPtP" href="../traits/imperiansystems_multichain_MultiChainPtP/getpeerinfo.html">getpeerinfo</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainPtP" href="../traits/imperiansystems_multichain_MultiChainPtP/ping.html">ping</a>()
+                        </li></ul><ul class="none"><li>// Inherited methods from <span title="imperiansystems\multichain\MultiChainQueryBlockchain">MultiChainQueryBlockchain</span></li><li>public array <a title="imperiansystems\multichain\MultiChainQueryBlockchain" href="../traits/imperiansystems_multichain_MultiChainQueryBlockchain/getblockchaininfo.html">getblockchaininfo</a>()
+                        </li></ul><ul class="none"><li>// Inherited methods from <span title="imperiansystems\multichain\MultiChainAdvancedWalletControl">MultiChainAdvancedWalletControl</span></li><li>public array <a title="imperiansystems\multichain\MultiChainAdvancedWalletControl" href="../traits/imperiansystems_multichain_MultiChainAdvancedWalletControl/backupwallet.html">backupwallet</a>()
+                        </li><li>public array <a title="imperiansystems\multichain\MultiChainAdvancedWalletControl" href="../traits/imperiansystems_multichain_MultiChainAdvancedWalletControl/getwalletinfo.html">getwalletinfo</a>()
+                        </li><li>public null <a title="imperiansystems\multichain\MultiChainAdvancedWalletControl" href="../traits/imperiansystems_multichain_MultiChainAdvancedWalletControl/importwallet.html">importwallet</a>()
                         </li></ul>
 
             }<br/></div>
@@ -144,6 +153,15 @@
             </li>
             <li>
               <a title="imperiansystems\multichain\MultiChainStreamManagement" href="../traits/imperiansystems_multichain_MultiChainStreamManagement.html">imperiansystems\multichain\MultiChainStreamManagement</a>
+            </li>
+            <li>
+              <a title="imperiansystems\multichain\MultiChainPtP" href="../traits/imperiansystems_multichain_MultiChainPtP.html">imperiansystems\multichain\MultiChainPtP</a>
+            </li>
+            <li>
+              <a title="imperiansystems\multichain\MultiChainQueryBlockchain" href="../traits/imperiansystems_multichain_MultiChainQueryBlockchain.html">imperiansystems\multichain\MultiChainQueryBlockchain</a>
+            </li>
+            <li>
+              <a title="imperiansystems\multichain\MultiChainAdvancedWalletControl" href="../traits/imperiansystems_multichain_MultiChainAdvancedWalletControl.html">imperiansystems\multichain\MultiChainAdvancedWalletControl</a>
             </li>
           </ul>
         </div>
@@ -281,6 +299,36 @@
                 — Instructs the node to start tracking one or more asset(s) or stream(s).</li>
             <li id="unsubscribe"><a title="imperiansystems\multichain\MultiChainStreamManagement" href="../traits/imperiansystems_multichain_MultiChainStreamManagement/unsubscribe.html">unsubscribe()</a>
                 — Instructs the node to stop tracking one or more asset(s) or stream(s).</li>
+          </ul>
+          <h3>Inherited from <a title="imperiansystems\multichain\MultiChainPtP" href="../traits/imperiansystems_multichain_MultiChainPtP.html">imperiansystems\multichain\MultiChainPtP</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="addnode"><a title="imperiansystems\multichain\MultiChainPtP" href="../traits/imperiansystems_multichain_MultiChainPtP/addnode.html">addnode()</a>
+                — Manually adds or removes a peer-to-peer connection (peers are also discovered and added automatically).</li>
+            <li id="getaddednodeinfo"><a title="imperiansystems\multichain\MultiChainPtP" href="../traits/imperiansystems_multichain_MultiChainPtP/getaddednodeinfo.html">getaddednodeinfo()</a>
+                — If verbose=true, returns information about a node which was added using addnode, or all such nodes if ip(:port) is omitted.</li>
+            <li id="getnetworkinfo"><a title="imperiansystems\multichain\MultiChainPtP" href="../traits/imperiansystems_multichain_MultiChainPtP/getnetworkinfo.html">getnetworkinfo()</a>
+                — Returns information about the network ports to which the node is connected, and its local IP addresses.</li>
+            <li id="getpeerinfo"><a title="imperiansystems\multichain\MultiChainPtP" href="../traits/imperiansystems_multichain_MultiChainPtP/getpeerinfo.html">getpeerinfo()</a>
+                — Returns information about the other nodes to which this node is connected.</li>
+            <li id="ping"><a title="imperiansystems\multichain\MultiChainPtP" href="../traits/imperiansystems_multichain_MultiChainPtP/ping.html">ping()</a>
+                — Sends a ping message to all connected nodes to measure network latency and backlog.</li>
+          </ul>
+          <h3>Inherited from <a title="imperiansystems\multichain\MultiChainQueryBlockchain" href="../traits/imperiansystems_multichain_MultiChainQueryBlockchain.html">imperiansystems\multichain\MultiChainQueryBlockchain</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="getblockchaininfo"><a title="imperiansystems\multichain\MultiChainQueryBlockchain" href="../traits/imperiansystems_multichain_MultiChainQueryBlockchain/getblockchaininfo.html">getblockchaininfo()</a>
+                — Returns information about the blockchain, including the bestblockhash of the most recent block on the active chain, which can be compared across nodes to check if they are perfectly synchronized.</li>
+          </ul>
+          <h3>Inherited from <a title="imperiansystems\multichain\MultiChainAdvancedWalletControl" href="../traits/imperiansystems_multichain_MultiChainAdvancedWalletControl.html">imperiansystems\multichain\MultiChainAdvancedWalletControl</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="backupwallet"><a title="imperiansystems\multichain\MultiChainAdvancedWalletControl" href="../traits/imperiansystems_multichain_MultiChainAdvancedWalletControl/backupwallet.html">backupwallet()</a>
+                — Creates a backup of the wallet.dat file in which the node’s private keys and watch-only addresses are stored.</li>
+            <li id="getwalletinfo"><a title="imperiansystems\multichain\MultiChainAdvancedWalletControl" href="../traits/imperiansystems_multichain_MultiChainAdvancedWalletControl/getwalletinfo.html">getwalletinfo()</a>
+                — Returns information about the node’s wallet, including the number of transactions (txcount) and unspent transaction outputs (utxocount), the pool of pregenerated keys.</li>
+            <li id="importwallet"><a title="imperiansystems\multichain\MultiChainAdvancedWalletControl" href="../traits/imperiansystems_multichain_MultiChainAdvancedWalletControl/importwallet.html">importwallet()</a>
+                — Imports the entire set of private keys which were previously dumped (using dumpwallet) into file filename.</li>
           </ul>
         </div>
       </section>

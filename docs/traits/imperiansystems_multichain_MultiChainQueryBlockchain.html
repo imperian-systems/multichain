@@ -2,7 +2,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>phpDox - imperiansystems\multichain\MultiChainServiceProvider</title>
+    <title>phpDox - imperiansystems\multichain\MultiChainQueryBlockchain</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   </head>
@@ -36,12 +36,12 @@
             <a href="../index.html">Overview</a>
           </li>
           <li class="separator">
-            <a href="../classes.html">Classes</a>
+            <a href="../traits.html">Traits</a>
           </li>
           <li class="separator">
-            <a href="../classes.html#imperiansystems_multichain">imperiansystems\multichain</a>
+            <a href="../traits.html#imperiansystems_multichain">imperiansystems\multichain</a>
           </li>
-          <li class="separator">MultiChainServiceProvider</li>
+          <li class="separator">MultiChainQueryBlockchain</li>
         </ul>
       </div>
       <nav class="box">
@@ -53,43 +53,41 @@
             <a href="#synopsis">Synopsis</a>
           </li>
           <li>
-            <a href="#hierarchy">Hierarchy</a>
-          </li>
-          <li>
             <a href="#methods">Methods</a>
           </li>
           <li>
-            <a href="../source/MultiChainServiceProvider.php.html#line6">Source</a>
+            <a href="../source/MultiChainQueryBlockchain.php.html#line11">Source</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1 id="introduction"><small>imperiansystems\multichain\</small>MultiChainServiceProvider</h1>
-        <h4/>
+        <h1 id="introduction"><small>imperiansystems\multichain\</small>MultiChainQueryBlockchain</h1>
+        <h4>MultiChain querying the blockchain</h4>
         <p/>
+        <ul>
+          <li>Author: Tim Schwartz</li>
+        </ul>
         <h2 id="synopsis">Synopsis</h2>
-        <div class="synopsis">class MultiChainServiceProvider
-                extends ServiceProvider
-            {<br/><ul class="none"><li>// methods</li><li>public void <a title="imperiansystems\multichain\MultiChainServiceProvider" href="../classes/imperiansystems_multichain_MultiChainServiceProvider/boot.html">boot</a>()
-                    </li><li>public void <a title="imperiansystems\multichain\MultiChainServiceProvider" href="../classes/imperiansystems_multichain_MultiChainServiceProvider/register.html">register</a>()
+        <div class="synopsis">trait MultiChainQueryBlockchain
+            {<br/><ul class="none"><li>// methods</li><li>public array <a title="imperiansystems\multichain\MultiChainQueryBlockchain" href="../traits/imperiansystems_multichain_MultiChainQueryBlockchain/getblockchaininfo.html">getblockchaininfo</a>()
                     </li></ul>
 
             }<br/></div>
         <h2 id="hierarchy">Hierarchy</h2>
         <div class="styled">
-          <h4>Extends</h4>
+          <h4>Used by</h4>
           <ul>
-            <li>Illuminate\Support\ServiceProvider</li>
+            <li>
+              <a title="imperiansystems\multichain\MultiChain" href="../classes/imperiansystems_multichain_MultiChain.html">imperiansystems\multichain\MultiChain</a>
+            </li>
           </ul>
         </div>
         <h2 id="methods">Methods</h2>
         <div class="styled">
           <h4>public</h4>
           <ul>
-            <li id="boot"><a title="imperiansystems\multichain\MultiChainServiceProvider" href="../classes/imperiansystems_multichain_MultiChainServiceProvider/boot.html">boot()</a>
-                — Bootstrap the application services.</li>
-            <li id="register"><a title="imperiansystems\multichain\MultiChainServiceProvider" href="../classes/imperiansystems_multichain_MultiChainServiceProvider/register.html">register()</a>
-                — Register the application services.</li>
+            <li id="getblockchaininfo"><a title="imperiansystems\multichain\MultiChainQueryBlockchain" href="../traits/imperiansystems_multichain_MultiChainQueryBlockchain/getblockchaininfo.html">getblockchaininfo()</a>
+                — Returns information about the blockchain, including the bestblockhash of the most recent block on the active chain, which can be compared across nodes to check if they are perfectly synchronized.</li>
           </ul>
         </div>
       </section>
