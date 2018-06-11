@@ -2,7 +2,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>phpDox - imperiansystems\multichain\MultiChainServiceProvider::register</title>
+    <title>phpDox - imperiansystems\multichain\MultiChainPtP::addnode</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   </head>
@@ -42,9 +42,9 @@
             <a href="../../classes.html#imperiansystems_multichain">imperiansystems\multichain</a>
           </li>
           <li class="separator">
-            <a title="imperiansystems\multichain\MultiChainServiceProvider" href="../../classes/imperiansystems_multichain_MultiChainServiceProvider.html">MultiChainServiceProvider</a>
+            <a title="imperiansystems\multichain\MultiChainPtP" href="../../traits/imperiansystems_multichain_MultiChainPtP.html">MultiChainPtP</a>
           </li>
-          <li class="separator">register</li>
+          <li class="separator">addnode</li>
         </ul>
       </div>
       <nav class="box">
@@ -56,28 +56,50 @@
             <a href="#synopsis">Synopsis</a>
           </li>
           <li>
+            <a href="#parameter">Parameter</a>
+          </li>
+          <li>
             <a href="#return">Return</a>
           </li>
           <li>
-            <a href="../../source/MultiChainServiceProvider.php.html#line27">Source</a>
+            <a href="../../source/MultiChainPtP.php.html#line23">Source</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1><small>imperiansystems\multichain\MultiChainServiceProvider::</small>register</h1>
-        <h4>Register the application services.</h4>
+        <h1><small>imperiansystems\multichain\MultiChainPtP::</small>addnode</h1>
+        <h4>Manually adds or removes a peer-to-peer connection (peers are also discovered and added automatically).</h4>
         <p/>
         <ul/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
-          <code>public function register()
+          <code>public function addnode(string
+        $ip,
+            int
+        $port,
+            string
+        $command )
             </code>
         </div>
+        <h2 id="parameterlist">Parameters</h2>
+        <dl class="styled">
+          <dt><code>$ip</code>
+                —
+                string</dt>
+          <dd/>
+          <dt><code>$port</code>
+                —
+                int</dt>
+          <dd/>
+          <dt><code>$command</code>
+                —
+                string</dt>
+          <dd/>
+        </dl>
         <h2 id="return">Returns</h2>
         <dl class="styled">
-          <dt>void</dt>
-          <dd><br/>
-        </dd>
+          <dt>null</dt>
+          <dd/>
         </dl>
       </section>
     </div>
